@@ -1,0 +1,127 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #333333;
+    --header-text: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    padding-top: 56px; /* To account for the fixed navbar */
+}
+
+h1, h2 {
+    color: var(--text-color);
+}
+
+.animated {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --header-bg: #1a1a1a;
+    --header-text: #ffffff;
+}
+
+body.dark-mode .card {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .bg-light {
+    background-color: #222 !important;
+}
+
+/* Custom styles for sections */
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#home {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #343a40;
+    --header-text: #ffffff;
+    --section-bg: #f8f9fa;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --header-bg: #1a1a1a;
+    --header-text: #ffffff;
+    --section-bg: #2c2c2c;
+}
+
+body.dark-mode .bg-light {
+    background-color: var(--section-bg) !important;
+}
+
+body.dark-mode .card {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .navbar {
+    background-color: var(--header-bg) !important;
+}
+
+.navbar {
+    background-color: var(--header-bg) !important;
+}
+
+section {
+    background-color: var(--bg-color);
+}
+
+section.bg-light {
+    background-color: var(--section-bg) !important;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+}
