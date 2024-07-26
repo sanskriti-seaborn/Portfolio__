@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
             body.classList.toggle('dark-mode');
             
             if (body.classList.contains('dark-mode')) {
-                darkModeToggle.textContent = 'Toggle Light Mode';
+                darkModeToggle.textContent = 'Light Mode';
             } else {
-                darkModeToggle.textContent = 'Toggle Dark Mode';
+                darkModeToggle.textContent = 'Dark Mode';
             }
         });
     } else {
